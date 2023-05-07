@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>hjhkjhjlkjc</title>
+    <link rel="icon" href="logo.jpeg">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body .story-contain{
+            display: flex;
+             position: fixed; 
+            align-content: space-between;
+        }
+        .story-contain .left{
+
+            width: 25%;
+            margin-right: 100px;
+        }
+        .story-contain .left .logo img {
+            width: 150px;
+            object-fit: cover;
+        }
+        body{
+            position: absolute;
+        }
+       
+        .story-contain .center{
+            position: relative;
+            margin-left: 100px;
+            top:calc(50%-(height/2));
+            left:calc(50%-(width/2));
+            margin-bottom: 60px;
+        }
+        .story-contain .center .stories{
+          
+            padding-bottom: 40px;
+            height: 600px;
+            width: 600px;
+            object-fit: cover;
+        }
+        .story-contain .center .stories img{
+            margin-top: 40px;
+            height: 600px;
+            object-fit: cover;
+            width: 600px;
+            margin-bottom: 80px;
+        }
+        .center .story-header{
+            align-items: center;
+            justify-content:space-between;
+            margin-top: 40px;
+            font-weight: bolder;
+            font-size: large;
+            position: absolute;
+        }
+        .center .story-header{
+            width: 100%;
+            float: left;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 20px;
+        }
+        .center .story-header .image{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .center .story-header img{
+            margin-left: 20px;
+            border-radius: 50%;
+        }
+        .center .story-header .content{
+            margin-left: 100px;
+             display: flex;
+        }
+        .center .story-header .image .right{
+            margin-right: 1000px;
+            display: flex;
+            float: left;
+
+        }
+        .center .story-header .image .right i{
+            display: flex;
+            justify-content: space-between;
+        }
+        .center .story-header .image .right i:last-child{
+            padding-left: 250px;
+            font-size:xx-large;
+        }
+        .center{
+            color: white;
+            height: 600px;
+            border-bottom: 2px solid red;
+        }
+        .center .stories img{
+            padding-bottom: 40px;
+            margin-bottom: 10px;
+        }
+        .center .image .right p{
+            align-items: center;
+            margin: 20px;
+
+        } 
+        .center .image .right i{
+            margin: 8px;
+            align-items: center;
+        }
+            
+        .center .image .right  p span{
+            margin-left: 4px;
+            font-weight: normal;
+        }
+            
+
+    </style>
+</head>
+<body>
+    <div class="story-contain">
+        <div class="left">
+            <div class="logo">
+                <img src="logo3-min.png" alt="">
+            </div>
+        </div>
+        <div class="center">
+            <div class="story-header">
+                <div class="image">
+                         <img src="images.jpeg" width="50px" height="50px" alt="">
+                            <div class="right">
+                            <p class="profile-name">hjhkjhjlkjc<span>3hr..</span></p>
+                            <i class="fa-solid fa-play"></i>
+                            <i class="fa-solid fa-volume-xmark"></i>
+                           <i class="fa-solid fa-ellipsis"></i>
+                           </div>
+                
+                </div>
+                
+            </div>
+            <div class="stories">
+                <img src="images.jpeg"alt="">
+            </div>
+        </div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

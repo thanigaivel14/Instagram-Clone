@@ -1,0 +1,312 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 15% ;
+    border-bottom: 1px solid rgba(219,219,219,1);
+   background-color: white;
+    position: sticky;
+    top:0;
+    z-index:10px;
+}
+header .logo{
+    height: 29px;
+}
+header .logo img{
+    height:100%;
+    object-fit: contain;
+}
+header .search{
+    width:250px;
+    background-color:rgba(239,239,239,1);
+    padding:3px 16px;
+    display:flex;
+    align-items:center;
+    border-radius:8px;
+}
+header .search input{
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color:rgba(239,239,239,1);
+    padding-left: 10px;
+    font-size: 15px;
+    color: #8e8e8e;
+}
+header nav ul{
+    list-style: none;
+    display:flex;
+}
+header nav ul li{
+    margin-right: 20px;
+}
+header nav ul li  img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+header nav ul li:last-child{
+    margin-right: 0;
+}
+header nav ul li a i{
+    font: size 24px;
+    color:rgba(38,38,38,1);
+}
+section{
+    padding: 30px 18%;
+    background-color: #fafafa;
+    display: flex;
+}
+.left-side{
+    width: 65%;
+}
+.story{
+    display: flex;
+    padding: 16px;
+    background-color: white;
+    border:1px solid rgba(219,219,219,1);
+    border-radius: 3px;
+}
+.story .stories{
+    width: 20%;
+    justify-content:space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.story .stories a img{
+    border-radius: 50%;
+    border: 3px solid #c62d8f;
+     padding: 1px;                                                     /* this */
+    object-fit: cover;
+}
+.story .stories p{
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;                                           /*.......*/
+    color: #262626;
+}
+.story{
+    width: 100%;
+    padding: 10px;
+    overflow: auto;
+}
+.post
+{
+    margin: 25px 0px;
+    background-color: white;
+    border:2px solid rgba(219,219,219,1);
+    border-radius: 3px;
+}
+.post .post-title{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+
+.post .post-title .post-left{
+    display: flex;
+    align-items: center;
+}
+.post .post-title .post-left .image{
+margin-right: 15px;
+}
+.post .post-title .post-left .image img{
+    border-radius: 50%;
+    object-fit:cover;
+}
+
+.post .post-title .post-left .name{
+padding-bottom: 2px;
+color: black;
+font-weight: bold;
+}
+.post .post-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.post .post-content video{
+    width:100%;
+    height:80%;
+    object-fit: contain;
+}
+.post .post-fotter{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;                                               /**/
+}
+.post .post-fotter .like i{
+    font-size: 22px;
+    margin-right: 10px;
+}
+.post .post-fotter .save{
+    font-size: 22px;
+}
+.post .post-fotter .fotter-content{
+    padding: 0,16px,16px,16px;
+}
+.post-fotter-content p{
+    margin-bottom: 3px;
+}
+.post-fotter-content .likes{
+    margin-bottom: 8px;
+}
+.post-fotter-content .name{
+    font-weight: bold;
+}
+.post .post-fotter-content  span{
+    margin-left: 10px;
+    font-weight: normal;
+}
+.post-fotter-content .posting-time{
+    font-size: 13px;
+    margin-top: 6px;
+}
+.post .add-comment{
+    padding: 16px;
+    border-top: 2px solid #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.post .add-comment .left-side{
+    display: flex;
+    align-items: center;
+}
+.post .add-comment .left-side input{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 14px;
+}
+
+.post .add-comment .left-side i{
+    font-size: 22px;
+    margin-right: 15px;
+}
+.right-side{
+    width: 35%;
+    margin-top: 15px;
+    position: fixed;
+    right: 30px;
+} 
+.right-side .profile-title .profile-right p{
+    color:blue;
+    font-weight: bold;
+}
+.left-side .comment-right-side{
+    width: 50px;
+    background-color: rgba(0, 0, 255, 0.692);
+    border-radius: 3px;
+}
+.left-side .comment-right-side p{
+    padding-left: 8px;
+    color: white;
+    font-weight: bold;
+    box-shadow: black;
+}
+.right-side .sugg-title .sugg-right{
+    color:blue;
+    font-weight: bold;
+}
+.right-side .sugg-title .sugg-left .details .name{
+    font-weight: bold;
+}
+.right-side .profile-title{
+    display: flex;
+    
+    align-items: center;
+}
+.right-side .profile-title .profile-left{
+    display: flex;
+    align-items: center;
+    margin-right:40px;
+}
+.profile-left .image img{
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.profile-left .detail p.name{
+    padding-bottom: 3px ;
+    font-weight: bold;
+}
+.suggestion{
+    
+    display: flex;
+    margin-top:25px;
+    margin-bottom: 20px;
+}
+.suggestion p{
+    margin-right: 90px;
+}
+.suggestion p:last-child{
+    margin-right: 0px;
+}
+.sugg-title{
+display: flex;
+align-items: center;
+margin-bottom: 15px;
+}
+.sugg-title .sugg-left{
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+}
+.sugg-title .sugg-left .image img{
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+.sugg-title .sugg-left .details .name{
+    padding: 3px;
+    font-weight: bo;
+}
+.story::-webkit-scrollbar{
+    display: none;
+} 
+ @media (max-width:850px) {
+    header{
+        padding: 10px 20px;
+    }
+    section .left-side{
+        width: 100%;
+    }
+    section .right-side{
+        display: none;
+    }
+    
+ }
+
+ @media (max-width:633px){
+    header .search
+    {
+        display: none;
+        opacity: 0%;
+    }
+    section{
+        padding: 30px 20px;
+    }
+ }
+ @media(max-width:576px){
+    .story .stories{
+        width: 25%;
+    }
+    header nav ul li {
+        margin-right: 10px;
+    }
+ }
+ video::-webkit-media-controls{
+    display: none;
+ }
+ 
